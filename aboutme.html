@@ -6,47 +6,35 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <style>
       /* Styling Only Related To THIS Page */
-      .parent-flex {
-        display: flex;
-        background-color: purple;
-        justify-content: space-around;
-        padding: 10px;
-        margin-bottom: 20px;
+      
+      .info {
+        float:left;
+        width:33.33%;
       }
 
-      img {
-       width:240px;
-        object-fit: contain;
-        margin-left:5px;
-        margin-right:5px;
+      img{
+        width:300px;
+        margin:5px;
       }
-
-      .line{
-        display:flex;
-        align-items:center;
+      .photos:after {
+       content: "";
+       display: table;
+       clear: both;
+       }
+      
+      .c1{
+        margin:5px;
       }
-
-      .Rs1 {
-        display:flex;
+      .c2{
+        margin:5px
       }
-      .Rs2 {
-        display:flex;
-      }
-      .Rs3 {
-        display:flex;
+      .c3{
+        margin:5px
       }
       .photos{
         display:flex;
-        max-width:500px
-      }
-      .c1{
-        display:flex;
-      }
-      .c2{
-        display:flex;
-      }
-      .c3{
-        display:flex;
+        background-color:black;
+        justify-content:center;
       }
       
   .zoom1, 
@@ -65,9 +53,9 @@
   object-fit: contain;
   margin-left:7px;
   margin-right:7px;
-  transition: transform .2s; /* Animation */
+  transition: transform .2s; 
   transition-property:background-color .2s;
-  transition-property: margin-top .2s;
+ 
   height: 200px;
 }
 
@@ -83,11 +71,8 @@
 .zoom10:hover, 
 .zoom11:hover, 
 .zoom12:hover{
-  transform: scale(2.0);
-  background-color:rgb(154, 155, 157);
-  padding:5px;
-  margin-top:70px;
-}
+  transform: scale(1.5);
+}*/
 
       
     </style>
@@ -118,49 +103,50 @@
     <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
     <h2>Photography</h2>
     <div class = "photos">
-
-      <div class = "info zoom1 c1">
+<div class = "c1">
+      <div class = "zoom1">
         <img src = "images/photos/IMG_1394.jpeg">
       </div>
-      <div class = "info zoom2 c2">
+      <div class = "zoom2">
         <img src = "images/photos/IMG_1512.jpeg">
       </div>
-      <div class = "info zoom3 c3">
-        <img src = "images/photos/IMG_2521.jpeg">
-      </div>
-      <div class = "info zoom4 c1">
-        <img src = "images/photos/IMG_3055.jpeg">
-      </div>
-    
-    
-      <div class = "info zoom5 c2">
-        <img src = "images/photos/IMG_3250.jpeg">
-      </div>
-      <div class = "info zoom6 c3">
-        <img src = "images/photos/IMG_3583.jpeg">
-      </div>
-      <div class = "info zoom7 c1">
+      <div class = "zoom3">
         <img src = "images/photos/IMG_3586.jpeg">
       </div>
-      <div class = "info zoom8 c2">
+      <div class = "zoom4">
+        <img src = "images/photos/IMG_3055.jpeg">
+      </div>
+    </div>
+    <div class = "c2">
+      <div class = "zoom5">
+        <img src = "images/photos/IMG_4730.jpeg">
+      </div>
+      <div class = "zoom6">
+        <img src = "images/photos/IMG_3583.jpeg">
+      </div>
+      <div class = "zoom7">
+        <img src = "images/photos/IMG_2521.jpeg">
+      </div>
+      <div class = "zoom8">
         <img src = "images/photos/IMG_3940.jpeg">
       </div>
     </div>
-    <div class = "Rs3">
-      <div class = "info zoom9 c3">
-        <img src = "images/photos/IMG_4730.jpeg">
+    <div class = "c3">
+      <div class = "zoom9">
+        <img src = "images/photos/IMG_3250.jpeg">
       </div>
-      <div class = "info zoom10 c1">
+      <div class = "zoom10">
         <img src = "images/photos/IMG_5891.jpeg">
       </div>
-       <div class = "info zoom11 c2">
+       <div class = "zoom11">
         <img src = "images/photos/IMG_6287.jpeg">
       </div>
-      <div class = "info zoom12 c3">
-        <img src = "images/WS200763.jpg">
+      <div class = "zoom12">
+        <img src = "images/photos/IMG_6358.jpeg">
       </div>
     </div>
-   </div>
+    </div>
+   
       
   </body>
 </html>
