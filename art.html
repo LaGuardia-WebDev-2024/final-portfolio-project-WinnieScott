@@ -14,11 +14,26 @@
         margin-bottom: 20px;
       }
 
+      h2, h3 {
+       
+      }
+
+      
+
+      #all {
+        margin:auto;
+        align-items:center;
+      }
+
       img {
        width:240px;
         object-fit: contain;
         margin-left:5px;
         margin-right:5px;
+      }
+
+      #page{
+        background-color:rgb(238, 207, 162)
       }
 
       .line{
@@ -59,14 +74,14 @@
   .zoom9,
   .zoom10,
   .zoom11,
-  .zoom12,{
+  .zoom12{
   width:240px;
   object-fit: contain;
   margin-left:7px;
   margin-right:7px;
-  transition: transform .2s; /* Animation */
-  transition-property:background-color .2s;
-  transition-property: margin-top .2s;
+  transition: transform .2s; 
+  transition-property:background-color, .3s;
+  transition-property: margin-top, .3s;
   height: 200px;
 }
 
@@ -82,8 +97,7 @@
 .zoom10:hover, 
 .zoom11:hover, 
 .zoom12:hover{
-  transform: scale(2.0);
-  background-color:rgb(154, 155, 157);
+  transform: scale(2.3);
   padding:5px;
   margin-top:70px;
 }
@@ -94,7 +108,7 @@
     <!-- ⬆⬆⬆⬆ Nav Bar -->
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="aboutme.html">Photograpy and Film</a></li>
       <li><a class="active" href="art.html">Technical Theater</a></li>
       <li><a href="resume.html">Resume</a></li>
       <li style="float: right">
@@ -113,8 +127,11 @@
       </li>
     </ul>
     <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
+
+  <div id = "page">
+     <h2>Lighting Design</h2>
     <h3>Rising Stars 2026 (Talent Show)</h3>
-   
+   <div id = "all">
     <div class = "Rs1">
       <div class = "info zoom1">
         <img src = "images/WS200763.jpg">
@@ -169,8 +186,8 @@
         <p>"Feeling Good" by Nina Simone</p>
       </div>
     </div>
-   
+   </div>
     
-    
+    </div>
   </body>
 </html>
