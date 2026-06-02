@@ -5,20 +5,67 @@
     <title>Final Project - Resume</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <style>
-   
+
+    .resume:after {
+       content: "";
+       display: table;
+       clear: both;
+       display: grid;
+       }
+     .resume{
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 20px;
+      
+      }
+
     .labels {
       display: flex;
     }
     .production{
       padding:10px;
-      display:block;
+      display:flex;
+      background-color:aqua;
+      border:5px solid;
+      float:left;
+        width:33.33%;
     }
     .boss {
       padding:10px;
-      display:block;
+      display:flex;
+      background-color:aquamarine;
+      border:5px solid;
+      float:left;
+        width:33.33%;
+    }
+    .place{
+      padding:10px;
+      display:flex;
+      background-color:blue;
+      border:5px solid;
+      float:left;
+        width:33.33%;
+    }
+    .city{
+      padding:10px;
+      display:flex;
+      background-color:blueviolet;
+      border:5px solid;
+      float:left;
+        width:33.33%;
+    }
+    .date{
+      padding:10px;
+      display:flex;
+      background-color:brown;
+      border:5px solid;
+      float:left;
+        width:33.33%;
     }
     .row{
       display:flex;
+    }
+    body{
+      background-color:aliceblue;
     }
     </style>
   </head>
@@ -26,7 +73,7 @@
     <!-- ⬆⬆⬆⬆ Nav Bar -->
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="aboutme.html">Photograpy and Film</a></li>
+      <li><a href="aboutme.html">Photography and Film</a></li>
       <li><a href="art.html">Technical Theater</a></li>
       <li><a class="active" href="resume.html">Resume</a></li>
       <li style="float: right">
@@ -46,36 +93,47 @@
     </ul>
     <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
     <h1>Resume</h1>
-  <div class = "labels"><div class = "production"><p>PRODUCTION</p></div><div class = "boss"><p>Supervisor/Director/Designer</p></div><div class = "theater"><p>Theater/Company</p></div><div class = "place"><p>Location</p></div></div>
+<div class = "resume">
+  <div class = "labels"><div class = "production"><p>Production</p></div><div class = "boss"><p>Supervisor/Director/Designer</p></div><div class = "place"><p>Theater/Company</p></div><div class = "city"><p>Location</p></div> <div class = "date">Year</div></div>
     <p>
 <h3>Light Board Programmer and Operator</h3> 
-<div class = "row"><div class = "production">Of Thee I Sing</div> <div class = "boss">Ziggy Bornas</div> Fiorello H. LaGuardia High School, New York City, New York, 2026<br>
+<div class = "row"><div class = "production">Of Thee I Sing</div> <div class = "boss">Ziggy Bornas</div> <div class = "place">Fiorello H. LaGuardia High School</div> <div class = "city">New York City, New York</div> <div class = "date">2026</div><br>
 </div>
-<div class = "row"><div class = "production">Senior One Acts</div> <div class = "boss">Ziggy Bornas</div>Fiorello H. LaGuardia High School, New York City, New York, 2026<br>
+<div class = "row"><div class = "production">Senior One Acts</div> <div class = "boss">Ziggy Bornas</div><div class = "place">Fiorello H. LaGuardia High School</div> <div class = "city">New York City, New York</div> <div class = "date">2026</div><br>
 </div>
 <h3>Lighting Designer</h3>
-<div class = "row"><div class = "production">Rising Stars</div> Lee Lobenhofer, Fiorello H. LaGuardia High School, New York City, New York, 2026<br>
+<div class = "row"><div class = "production">Rising Stars</div> <div class = "boss">Lee Lobenhofer</div> <div class = "place">Fiorello H. LaGuardia High School</div> <div class = "city">New York City, New York</div> <div class = "date">2026</div><br>
 </div>
-<div class = "row"><div class = "production">Centralia Improv</div> <div class = "boss">Kevin Scott</div> The Peoples Improv theater, New York City, New York, 2023-2025<br>
+<div class = "row"><div class = "production">Centralia Improv</div> <div class = "boss">Kevin Scott</div> <div class = "place">The Peoples Improv Theater</div> <div class = "city">New York City, New York</div> <div class = "date">2023-2025</div><br>
 </div>
 <h3>Assistant Lighting Designer</h3>
-<div class = "production">Macbeth</div> <div class = "boss">Yang Yu</div> Fiorello H. LaGuardia High School, New York City, New York, 2026<br>
-<div class = "production">Rising Stars</div> <div class = "boss">Lee Lobenhofer</div> Fiorello H. LaGuardia High School, New York City, New York, 2026<br>
+<div class = "row">
+<div class = "production">Macbeth</div> <div class = "boss">Yang Yu</div> <div class = "place">Fiorello H. LaGuardia High School</div> <div class = "city">New York City, New York</div> <div class = "date">2026</div><br>
+</div>
+<div class = "row"><div class = "production">Rising Stars</div> <div class = "boss">Lee Lobenhofer</div> <div class = "place">Fiorello H. LaGuardia High School</div> <div class = "city">New York City, New York</div> <div class = "date">2026</div><br>
+</div>
 <h3>Projection Designer and Operator</h3>
-<div class = "production">Peter and the Starcatcher</div> <div class = "boss">C Shea</div> Fiorello H. LaGuardia High School, New York City, New York, 2025<br>
+<div class ="row"><div class = "production">Peter and the Starcatcher</div> <div class = "boss">C Shea</div> <div class = "place">Fiorello H. LaGuardia High School</div> <div class = "city">New York City, New York</div> <div class = "date">2025</div><br>
+</div>
 <h3>Deck Electrician</h3>
-<div class = "production">Little Shop of Horrors</div> <div class = "boss">Wyatt Surla</div> Fiorello H. LaGuardia High School, New York City, New York, 2025<br>
+<div class = "row"><div class = "production">Little Shop of Horrors</div> <div class = "boss">Wyatt Surla</div> <div class = "place">Fiorello H. LaGuardia High School</div> <div class = "city">New York City, New York</div> <div class = "date">2025</div><br>
+</div>
 <h3>Stage Manager</h3>
-<div class = "production">La Belle Helene</div> <div class = "boss">Qi Shan Chen</div> Fiorello H. LaGuardia High School, New York City, New York, 2025<br>
+<div class = "row"><div class = "production">La Belle Helene</div> <div class = "boss">Qi Shan Chen</div> <div class = "place">Fiorello H. LaGuardia High School</div> <div class = "city">New York City, New York</div> <div class = "date">2025</div><br>
+</div>
 <h3>Spotlight Operator</h3>
-<div class = "production">In To The Woods</div> <div class = "boss">Lucca Chesky/Amalia Hartray</div> Fiorello H. LaGuardia High School, New York City, New York, 2024<br>
-<div class = "production">Rising Stars</div> <div class = "boss">Ziggy Bornas</div> Fiorello H. LaGuardia High School, New York City, New York, 2024<br>
+<div class = "row"><div class = "production">In To The Woods</div> <div class = "boss">Lucca Chesky/Amalia Hartray</div> <div class = "place">Fiorello H. LaGuardia High School</div> <div class = "city">New York City, New York</div> <div class = "date">2024</div><br>
+</div>
+<div class = "row"><div class = "production">Rising Stars</div> <div class = "boss">Ziggy Bornas</div> <div class = "place">Fiorello H. LaGuardia High School</div> <div class = "city">New York City, New York</div> <div class = "date">2024</div><br>
+</div>
 <h3>Assistant Costume Designer</h3>
-<div class = "production">Into the Woods</div> <div class = "boss">Amelia Dombrowski</div> Fiorello H. LaGuardia High School, New York City, New York, 2024<br>
+<div class = "row"><div class = "production">Into the Woods</div> <div class = "boss">Amelia Dombrowski</div> <div class = "place">Fiorello H. LaGuardia High School</div> <div class = "city">New York City, New York</div> <div class = "date">2024</div><br>
+</div>
 <h3>Props Crew</h3>
-<div class = "production">The Gondoliers</div> <div class = "boss">Nathalie Gendron,</div> Fiorello H. LaGuardia High School, New York City, New York, 2024<br>
-<div class = "production">Hansel and Gretel</div> Prelude Opera Company, New York City, New York, 2025
-
-    </p>
+<div class = "row"><div class = "production">The Gondoliers</div> <div class = "boss">Nathalie Gendron,</div> <div class = "place">Fiorello H. LaGuardia High School</div> <div class = "city">New York City, New York</div> <div class = "date">2024</div><br>
+</div>
+<div class = "row"><div class = "production">Hansel and Gretel</div> <div class = "place">Prelude Opera Company</div> <div class = "city">New York City, New York</div> <div class = "date">2025</div>
+</div>
+    </p></div>
   </body>
 </html>
