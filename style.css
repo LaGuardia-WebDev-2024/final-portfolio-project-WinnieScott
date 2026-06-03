@@ -18,7 +18,7 @@ ul {
   background-color: #333333;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 59%;
   z-index: 999;
 }
 
@@ -39,7 +39,7 @@ li a:hover:not(.active) {
 }
 
 .active {
-  background-color: red;
+  background-color: rgb(221, 81, 16);
 }
 
 h1 {
